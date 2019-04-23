@@ -111,6 +111,7 @@ d3.csv("Women_leadership.csv", function(d, i, columns) {
       .text(function(d) { return d; });
 });
 
+  // Prep the tooltip bits, initial display is hidden
   var tooltip = svg.append("g")
     .attr("class", "tooltip")
     .style("display", "none");
