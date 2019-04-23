@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title >196V Final Prototype</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.3/d3-tip.min.js"></script>
+
+  </head>
+<style>
+
+path:hover
+{
+    fill-opacity: .5;
+}
+  
+.axis path {
+  fill: none;
+}
+  
+.axis line {
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.5);
+}
+  
+.background
+{
+    fill: transparent;
+    pointer-events: all;
+}
+
+.legend
+{
+    position:absolute;
+    left:1000px;
+    top:2300px;
+}
+  
+.d3-tip
+{
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+  color: white;
+    border-radius: 2px;
+}
+
+.d3-tip:after
+{
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+
+.d3-tip.n:after
+{
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+      
+.main
+{
+    margin: 0px 25px;
+}
+
+.chart rect
+{
+    fill: #4ea7db;
+}
+
+.chart text
+{
+    fill: white;
+    font: 10px sans-serif;
+    text-anchor: end;
+}
+
+
+
+</style>
+  <body>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+          <i class="fa fa-times"></i>
+        </a>
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#top">Skir Skir</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#top">Home</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#about">Education and Laborfoce</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#services">Gender Pay Gap</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#portfolio">Leadership</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close").click();>Our Team</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="text-vertical-center">
+        <h1>Bias Against Women in corporate Industry</h1>
+        <h2>196V FINAL PROTTOYPE</h2>
+        <h3>Hamdan Ahmed  Hussain| Harsha Nagalla | Uthej Mopathi</h3>
+        <br>
+        <a href="#about" class="btn btn-dark btn-lg js-scroll-trigger">Let's get started</a>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container text-center">
+        <h2>We try to find out the issue of <strong>gender gap</strong> in the workplace</h2>
+        <p class="lead">We will first look into the differences of educational level and laborforce between male and female around the whole world. Then we will compare the  average income and the percentage of leadership positions of men and women in United States. We want to demonstrate the current state of gender gap and show you the challenge of inequality that women are facing.</p>
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!--<section id="services" class="services bg-primary text-white">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-10 mx-auto">
+            <h2>Our Services</h2>
+            <hr class="small">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                  </span>
+                  <h4>
+                    <strong>Service Name</strong>
+                  </h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-light">Learn More</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                  </span>
+                  <h4>
+                    <strong>Service Name</strong>
+                  </h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-light">Learn More</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                  </span>
+                  <h4>
+                    <strong>Service Name</strong>
+                  </h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-light">Learn More</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                  </span>
+                  <h4>
+                    <strong>Service Name</strong>
+                  </h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-light">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+     </div>
+
+    </section>-->
+
+
+    <!-- Callout -->
+    
+
+        <!-- Call to Action -->
+      <aside class="call-to-action bg-primary text-white">
+      <div class="container text-center">
+        <h3>Education And Labor Force Difference Among Genders</h3>
+        <p class="lead">In this chart, every bubble represents a country. For education: High -- gender index greater than 80; Moderate -- gender index between 60~80; Low -- gender index smaller than 60. For labor force: High -- gender index greater than 60; Moderate -- gender index between 40~60; Low -- gender index smaller than 40.</p>
+
+      </div>
+      <br>
+      <br>
+      <br>
+          <!-- bubble -->
+    <iframe src ="bubble.html" width="1235" height="900"></iframe>
+
+    </aside>
+
+
+    <aside class="call-to-action bg-primary text-white">
+      <div class="container text-center">
+        <h3>Ratio of Gender Pay Gap by State in 2016 (Earning Ratio of Women / Men)</h3>
+
+      </div>
+    </aside>
+
+    <!-- Map -->
+    <div id="scatter">
+          </div>
+
+
+        <aside class="call-to-action bg-primary text-white">
+      <div class="container text-center">
+        <h3>Female and male in leadership position gap by age</h3>
+
+      </div>
+    </aside>
+
+    <!-- bar -->
+    <iframe src ="bar.html" width="1235" height="600"></iframe>
+
+
+
+    <!-- Call to Action -->
+    
+
+
+    <!-- Footer -->
+    <aside class="callout">
+      <div class="text-vertical-center">
+        <h2>Conclusion</h2>
+        <p class="lead">----------------------------------------------------------------------------------------------------------------- </p>
+        <p class="lead">T----------------------------------------------------------------------------------------------</p>
+      </div>
+    </aside>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h2>
+              <strong>The end</strong>
+            </h2>
+            <p>California state university, Sacramento
+              <br></p>
+            <ul class="list-unstyled">
+                <i class="fa fa-envelope-o fa-fw"></i>
+                <a href="mailto:name@example.com">hamdan858@gmail.com</a>
+              </li>
+              <li>
+                <i class="fa fa-envelope-o fa-fw"></i>
+                <a href="mailto:name@example.com">nagalla@saiharsha@gmail.com</a>
+              </li>
+              <li>
+                <i class="fa fa-envelope-o fa-fw"></i>
+                <a href="mailto:name@example.com">uthejmopathi4@gmail.com</a>
+              </li>
+            </ul>
+            <br>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook fa-fw fa-3x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter fa-fw fa-3x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-dribbble fa-fw fa-3x"></i>
+                </a>
+              </li>
+            </ul>
+            <hr class="small">
+            <p class="text-muted">The end</p>
+          </div>
+        </div>
+      </div>
+      <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+        <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+      </a>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.js"></script>
+    <script>
+        var width = 960;
+var height = 600;
+var map =  height/1.15;
+var lowColor = '#ffffb2';
+var highColor = '#bd0026';
+var active = d3.select(null);
+
+var projection = d3.geo.albersUsa()
+    .translate([width/2, map/2])
+    .scale([800]);
+         
+var path = d3.geo.path()
+    .projection(projection);
+
+
+var svg = d3.select("#scatter").attr("align","center")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", map);
+  
+svg.append("rect")
+    .attr("class", "background")
+    .on("click", reset);
+
+var g = svg.append("g")
+    .style("stroke-width", "1.5px");
+
+d3.csv("wage_gap.csv", function(data)
+{
+    var dataArray = [];
+    for (var d = 0; d < data.length; d++)
+    {
+        dataArray.push(parseFloat(data[d].value))
+    }
+    
+    var minVal = d3.min(dataArray);
+    var maxVal = d3.max(dataArray);
+    var ramp = d3.scale.linear()
+        .domain([minVal,maxVal])
+        .range([lowColor,highColor]);
+
+    d3.json("states.json", function(json)
+    {
+        for (var i = 0; i < data.length; i++)
+        {
+            var dataState = data[i].state;
+            var dataValue = data[i].value;
+            var dataMen = data[i].MenEarning;
+            var dataWomen = data[i].WomenEarning;
+        
+            for (var j = 0; j < json.features.length; j++)
+            {
+                var jsonState = json.features[j].properties.name;
+                if (dataState == jsonState)
+                {
+                    json.features[j].properties.value = dataValue; 
+                    json.features[j].properties.men = dataMen;
+                    json.features[j].properties.women = dataWomen;
+                    break;
+                }
+            }
+        }
+    
+        var tip = d3.tip()
+            .attr("class", "d3-tip")
+            .offset([-40, 0])
+        .html(function(d)
+            {
+        var x = +d.properties.value;
+        x = x.toPrecision(2);
+        return "State: " + d.properties.name + "<br><br>"
+                + "Averages Salary:" + "<br>"
+        + "<div id='tipDiv'></div><br>" 
+                + "Women make " + x + " cents per dollar" + "<br>" 
+        + "that a man makes in " + d.properties.name;
+            });
+
+        svg.call(tip);
+    
+        g.selectAll("path")
+            .data(json.features)
+            .enter()
+            .append("path")
+            .attr("d", path)
+            .style("stroke", "#fff")
+            .style("stroke-width", "1")
+            .style("fill", function(d)
+            {
+                return ramp(d.properties.value)
+            })
+            .attr("class", "feature")
+            
+            .on("mouseover",  function(d)
+            {
+                tip.show(d);
+                var state = d.properties.name;
+                var men = d.properties.men;
+                var women = d.properties.women;
+                var dataset = [men, women];
+                var barHeight = 20;
+                
+                var tipSVG = d3.select("#tipDiv")
+                    .append("svg")
+                    .attr("width", 150)
+                    .attr("height", barHeight * 2);
+                    
+                var x = d3.scale.linear()
+                    .domain([0, d3.max(dataset)])
+                    .range([0, 150]);
+
+                var bar = tipSVG.selectAll("g")
+                    .data(dataset)
+                    .enter().append("g")
+                    .attr("transform", function(d, i)
+                    {
+                        return "translate(0," + i * barHeight + ")";
+                    });
+                
+                bar.append("rect")
+        .attr("width", 0)
+        //.attr("height", bar)
+        .transition()
+        .duration(1000)
+                    .attr("width", x)
+                    .attr("height", barHeight - 1)
+                    .attr("fill", function(d)
+               {
+          if(d === d3.max(dataset))
+            {
+              return "#4286f4";
+            }
+          else
+            {
+              return "#f756a1";
+            }
+        });
+
+                bar.append("text")
+                    .attr("x", 2)
+                    .attr("y", barHeight / 2)
+                    .attr("dy", ".35em")
+                    .attr("fill", function(d)
+               {
+          if(d === d3.max(dataset))
+            {
+             return "white";
+             }
+          else
+            {
+              return "white";
+            }
+        })
+            .style("font-size", "12px")
+                    .text(function(d)
+                    {
+                        if(d === d3.max(dataset))
+                        {
+                            return "Men: $" + d;
+                        }
+                        else
+                        {
+                            return "Women: $" + d;
+                        }
+                    });
+                })
+                .on("mouseout", tip.hide);; 
+            });
+    
+    var w = 140, h = 250;
+    
+    var key = d3.select("body")
+        .append("svg")
+        .attr("width", w)
+        .attr("height", h)
+        .attr("class", "legend");
+
+    var legend = key.append("defs")
+        .append("svg:linearGradient")
+        .attr("id", "gradient")
+        .attr("x1", "100%")
+        .attr("y1", "0%")
+        .attr("x2", "100%")
+        .attr("y2", "100%")
+        .attr("spreadMethod", "pad");
+
+    legend.append("stop")
+        .attr("offset", "0%")
+        .attr("stop-color", highColor)
+        .attr("stop-opacity", 1);
+            
+    legend.append("stop")
+        .attr("offset", "100%")
+        .attr("stop-color", lowColor)
+        .attr("stop-opacity", 1);
+
+    key.append("rect")
+        .attr("width", w - 100)
+        .attr("height", h)
+        .style("fill", "url(#gradient)")
+        .attr("transform", "translate(0,10)");
+
+    
+  
+    var y = d3.scale.linear()
+        .range([h, 0])
+        .domain([minVal, maxVal]);
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("right")
+        .tickFormat(function(d, i)
+        {
+            return d + "%";
+        });
+
+    key.append("g")
+        .attr("class", "y axis")
+        .attr("transform", "translate(41,10)")
+        .call(yAxis);
+});
+
+function clicked(d)
+{
+    if (active.node() === this)
+    {
+        return reset();
+    }
+    
+    active.classed("active", false);
+    active = d3.select(this).classed("active", true);
+  
+    var bounds = path.bounds(d),
+        dx = bounds[1][0] - bounds[0][0],
+        dy = bounds[1][1] - bounds[0][1],
+        x = (bounds[0][0] + bounds[1][0]) / 2,
+        y = (bounds[0][1] + bounds[1][1]) / 2,
+        scale = .6 / Math.max(dx / width, dy / height),
+        translate = [width / 2 - scale * x, height / 2 - scale * y];
+
+    g.transition()
+        .duration(750)
+        .style("stroke-width", 1.5 / scale + "px")
+        .attr("transform", "translate(" + translate + ")scale(" + scale + ")");
+}
+
+function reset()
+{
+    active.classed("active", false);
+    active = d3.select(null);
+    
+    g.transition()
+        .duration(750)
+        .style("stroke-width", "1.5px")
+        .attr("transform", "");
+}
+d3.select(self.frameElement).style("height", height + "px");
+
+    </script>
+
+
+
+  </body>
+
+</html>

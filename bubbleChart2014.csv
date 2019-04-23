@@ -1,0 +1,122 @@
+objectName,reset,riskCategory1,riskCategory2,ratingCategory,ratingClassValue,F,M
+Norway,All-Countries,High,High,Very good equality,1,61.2,68.7
+Australia,All-Countries,Moderate,High,Very good equality,1,58.8,71.8
+Switzerland,All-Countries,High,High,Very good equality,1,61.8,74.9
+Denmark,All-Countries,Moderate,High,Very good equality,1,58.7,66.4
+Netherlands,All-Countries,Moderate,High,Very good equality,1,58.5,70.6
+Germany,All-Countries,Moderate,High,Very good equality,1,53.6,66.4
+Ireland,All-Countries,Moderate,High,Very good equality,1,53.1,68.1
+United States,All-Countries,Moderate,High,Very good equality,1,56.3,68.9
+Canada,All-Countries,High,High,Very good equality,1,61.6,71
+New Zealand,All-Countries,High,High,Very good equality,1,62,73.8
+Singapore,All-Countries,Moderate,High,Very good equality,1,58.8,77.2
+"Hong Kong, China (SAR)",All-Countries,Moderate,High,Very good equality,1,51.3,67.8
+Sweden,All-Countries,High,High,Very good equality,1,60.3,67.9
+United Kingdom,All-Countries,Moderate,High,Very good equality,1,55.7,68.7
+Iceland,All-Countries,High,High,Very good equality,1,70.5,77.4
+Korea (Republic of),All-Countries,Moderate,High,Fair equality,1,50.1,72.1
+Israel,All-Countries,Moderate,High,Very good equality,1,57.9,69.1
+Luxembourg,All-Countries,Moderate,High,Very good equality,1,50.7,64.6
+Japan,All-Countries,Moderate,High,Very good equality,1,48.8,70.4
+Belgium,All-Countries,Moderate,High,Very good equality,1,47.5,59.3
+France,All-Countries,Moderate,High,Very good equality,1,50.7,61.6
+Austria,All-Countries,Moderate,High,Very good equality,1,54.6,67.7
+Finland,All-Countries,Moderate,High,Very good equality,1,55.7,64
+Slovenia,All-Countries,Moderate,High,Very good equality,1,52.3,63.2
+Spain,All-Countries,Moderate,High,Very good equality,1,52.5,65.8
+Italy,All-Countries,Moderate,Moderate,Good equality,1,39.6,59.5
+Czech Republic,All-Countries,Moderate,High,Very good equality,1,51.1,68.3
+Greece,All-Countries,Moderate,High,Good equality,1,44.2,62.5
+Estonia,All-Countries,Moderate,High,Very good equality,1,56.2,68.9
+Brunei Darussalam,All-Countries,Moderate,High,Very good equality,1,52.6,75.3
+Cyprus,All-Countries,Moderate,High,Very good equality,1,56,71.1
+Qatar,All-Countries,Moderate,High,Very good equality,1,50.8,95.5
+Slovakia,All-Countries,Moderate,High,Very good equality,1,51.1,68.6
+Poland,All-Countries,Moderate,High,Very good equality,1,48.9,64.9
+Lithuania,All-Countries,Moderate,High,Very good equality,1,55.8,67.3
+Malta,All-Countries,Low,High,Very good equality,1,37.9,66.3
+Saudi Arabia,All-Countries,Low,High,Very good equality,1,20.2,78.3
+Argentina,All-Countries,Moderate,High,Very good equality,1,47.5,75
+United Arab Emirates,All-Countries,Moderate,High,Very good equality,1,46.5,92
+Chile,All-Countries,Moderate,High,Very good equality,1,49.2,74.8
+Portugal,All-Countries,Moderate,High,Very good equality,1,54.9,66.2
+Hungary,All-Countries,Moderate,High,Very good equality,1,44.8,60
+Bahrain,All-Countries,Low,High,Very good equality,1,39.2,86.9
+Latvia,All-Countries,Moderate,High,Very good equality,1,54.9,67.6
+Croatia,All-Countries,Moderate,High,Very good equality,1,44.7,58.4
+Kuwait,All-Countries,Moderate,High,Very good equality,1,43.6,83.1
+Montenegro,All-Countries,Moderate,Moderate,Very good equality,1,43,57.3
+Belarus,All-Countries,Moderate,High,Very good equality,1,50.1,63.1
+Russian Federation,All-Countries,Moderate,High,Good equality,1,57.1,71.7
+Oman,All-Countries,Low,High,Very good equality,2,29,82.6
+Romania,All-Countries,Moderate,High,Very good equality,2,48.7,64.9
+Uruguay,All-Countries,Moderate,High,Very good equality,2,55.6,76.8
+Bahamas,All-Countries,Moderate,High,Very good equality,2,69.3,79.3
+Kazakhstan,All-Countries,Moderate,High,Very good equality,2,67.7,77.9
+Barbados,All-Countries,Moderate,High,Very good equality,2,65.9,76.6
+Bulgaria,All-Countries,Moderate,Moderate,Very good equality,2,47.9,59
+Panama,All-Countries,Moderate,High,Very good equality,2,49,81.8
+Malaysia,All-Countries,Moderate,High,Very good equality,2,44.4,75.5
+Mauritius,All-Countries,Moderate,High,Very good equality,2,43.6,74.2
+Trinidad and Tobago,All-Countries,Moderate,High,Good equality,2,53,75.5
+Serbia,All-Countries,Moderate,High,Very good equality,2,44.5,60.9
+Cuba,All-Countries,Moderate,High,Very good equality,2,43.4,70
+Lebanon,All-Countries,Low,High,Very good equality,2,23.3,70.9
+Costa Rica,All-Countries,Moderate,High,Very good equality,2,46.6,79
+Iran (Islamic Republic of),All-Countries,Low,High,Very good equality,2,16.6,73.6
+Venezuela (Bolivarian Republic of),All-Countries,Moderate,High,Good equality,2,51.1,79.2
+Turkey,All-Countries,Low,High,Good equality,2,29.4,70.8
+Sri Lanka,All-Countries,Low,High,Good equality,2,35.1,76.3
+Mexico,All-Countries,Moderate,High,Very poor equality,2,45.1,79.9
+Brazil,All-Countries,Moderate,High,Very good equality,2,59.4,80.8
+Georgia,All-Countries,Moderate,High,Very good equality,2,56.5,75.1
+Azerbaijan,All-Countries,High,High,Very good equality,2,62.9,69.6
+Jordan,All-Countries,Low,High,Very good equality,2,15.6,66.6
+The former Yugoslav Republic of Macedonia,All-Countries,Moderate,High,Very good equality,2,43.1,67.5
+Ukraine,All-Countries,Moderate,High,Very good equality,2,53.2,66.9
+Algeria,All-Countries,Low,High,Very good equality,2,15.2,72.2
+Peru,All-Countries,High,High,Very good equality,2,68.2,84.4
+Albania,All-Countries,Moderate,High,Very good equality,2,44.9,65.5
+Armenia,All-Countries,Moderate,High,Very good equality,2,54.2,72.6
+Bosnia and Herzegovina,All-Countries,Low,High,Very good equality,2,34.1,57.3
+Ecuador,All-Countries,Moderate,High,Very good equality,2,54.7,82.7
+Saint Lucia,All-Countries,Moderate,High,Very good equality,2,62.7,76.2
+China,All-Countries,Moderate,High,Very good equality,2,63.9,78.3
+Fiji,All-Countries,Low,High,Very good equality,2,37.5,72
+Mongolia,All-Countries,Moderate,High,Very good equality,2,56.6,69.3
+Thailand,All-Countries,High,High,Very poor equality,2,64.3,80.7
+Libya,All-Countries,Low,High,Good equality,2,30,76.4
+Tunisia,All-Countries,Low,High,Very poor equality,2,25.1,70.9
+Colombia,All-Countries,Moderate,High,Very poor equality,2,55.8,79.7
+Saint Vincent and the Grenadines,All-Countries,Moderate,High,Good equality,2,55.7,78
+Jamaica,All-Countries,Moderate,High,Very poor equality,2,56.1,70.9
+Tonga,All-Countries,Moderate,High,Very poor equality,2,53.5,74.6
+Belize,All-Countries,Moderate,High,Very poor equality,3,49.2,82.3
+Dominican Republic,All-Countries,Moderate,High,Very poor equality,3,51.3,78.6
+Suriname,All-Countries,Moderate,High,Very poor equality,3,40.5,68.8
+Maldives,All-Countries,Moderate,High,Very poor equality,3,56.2,77.5
+Samoa,All-Countries,Low,High,Good equality,3,23.5,58.4
+Botswana,All-Countries,High,High,Very poor equality,3,71.9,81.6
+Moldova (Republic of),All-Countries,Low,High,Good equality,3,37.6,44.2
+Egypt,All-Countries,Low,High,Good equality,3,23.7,74.8
+Turkmenistan,All-Countries,Moderate,High,Fair equality,3,46.9,76.9
+Gabon,All-Countries,Moderate,High,Very poor equality,3,56.2,65.4
+Indonesia,All-Countries,Moderate,High,Fair equality,3,51.4,84.2
+Paraguay,All-Countries,Moderate,High,Fair equality,3,55.7,84.8
+"Palestine, State of",All-Countries,Low,High,Good equality,3,15.4,66.4
+Uzbekistan,All-Countries,Moderate,High,Very poor equality,3,48.1,75.6
+Philippines,All-Countries,Moderate,High,Fair equality,3,51.1,79.7
+El Salvador,All-Countries,Moderate,High,Good equality,3,47.8,79
+South Africa,All-Countries,Moderate,High,Good equality,3,44.5,60.5
+Viet Nam,All-Countries,High,High,Good equality,4,73,82.2
+Bolivia (Plurinational State of),All-Countries,High,High,Good equality,4,64.2,80.9
+Kyrgyzstan,All-Countries,Moderate,High,Good equality,4,56,79.5
+Iraq,All-Countries,Low,High,Good equality,4,14.9,69.8
+Cabo Verde,All-Countries,Moderate,High,Very poor equality,5,51.5,83.7
+Guyana,All-Countries,Moderate,High,Poor equality,5,42.6,80.5
+Nicaragua,All-Countries,Moderate,High,Fair equality,5,47.4,80.3
+Morocco,All-Countries,Low,High,Good equality,5,26.5,75.8
+Namibia,All-Countries,Moderate,High,Poor equality,6,54.7,63.7
+Guatemala,All-Countries,Moderate,High,Very poor equality,6,49.3,88.2
+Tajikistan,All-Countries,Moderate,High,Poor equality,6,58.9,77.1
+India,All-Countries,Low,High,Very poor equality,6,27,79.9
